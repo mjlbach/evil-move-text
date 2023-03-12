@@ -153,8 +153,11 @@ We use `prefix-numeric-value' to return a number.
     (forward-line n)
     (let ((start (point)))
       (insert line-text)
+      (set-mark start)
       (setq deactivate-mark nil)
-      (set-mark start))))
+      (when (and (bound-and-true-p evil-mode) (string= evil-state "visual"))
+        (backward-char 1)
+        (evil-visual-make-selection (mark) (point))))))
 
 ;;;###autoload
 (defun move-text-region-up (start end n)

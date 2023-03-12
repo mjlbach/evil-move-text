@@ -1,20 +1,22 @@
-[![Move-Text CI Tests](https://github.com/emacsfodder/move-text/actions/workflows/test.yml/badge.svg)](https://github.com/emacsfodder/move-text/actions/workflows/test.yml)
-[![MELPA](https://melpa.org/packages/move-text-badge.svg)](https://melpa.org/#/move-text)
-[![MELPA Stable](https://stable.melpa.org/packages/move-text-badge.svg)](https://stable.melpa.org/#/move-text)
+<!-- [![Move-Text CI Tests](https://github.com/emacsfodder/move-text/actions/workflows/test.yml/badge.svg)](https://github.com/emacsfodder/move-text/actions/workflows/test.yml) -->
+<!-- [![MELPA](https://melpa.org/packages/move-text-badge.svg)](https://melpa.org/#/move-text) -->
+<!-- [![MELPA Stable](https://stable.melpa.org/packages/move-text-badge.svg)](https://stable.melpa.org/#/move-text) -->
 
-# Move Text
+# Evil Move Text
 
-MoveText 
+This is a fork of [Move Text](https://github.com/emacsfodder/move-text) with support for evil (only).
+
+EvilMoveText 
 allows you to move the current line using M-up / M-down (or any other bindings you choose)
 if a region is marked, it will move the region instead.
 
 Using the prefix arg (C-u *number* or META *number*) will predetermine how many lines to move.
 
-Install from MELPA (or MELPA stable)
-
-```
-M-x package-install move-text <RETURN>
-```
+<!-- Install from MELPA (or MELPA stable) -->
+<!---->
+<!-- ``` -->
+<!-- M-x package-install move-text <RETURN> -->
+<!-- ``` -->
 
 If you want to use the default bindings, add the following to .emacs
 anywhere after `(package-initialize)`:
